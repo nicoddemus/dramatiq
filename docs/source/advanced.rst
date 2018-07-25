@@ -90,7 +90,7 @@ the message, raise an exception to indicate failure.
 .. code-block:: python
 
    import dramatiq
-   from dramatiq.middleware import Interrupt
+   from dramatiq.middleware import Shutdown
 
    @dramatiq.actor(max_retries=3, notify_shutdown=True)
    def long_running_task:
